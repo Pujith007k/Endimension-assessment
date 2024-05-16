@@ -59,7 +59,7 @@ class AddProduct extends Component{
                 <h1>Add Product</h1>
                 <div className="inputContainer">
                 <label htmlFor='categories' className="label">Category</label>
-                <select id="categories" className="input" onChange={this.onChangeCategory} value={category}>
+                <select id="categories" className="input" onChange={this.onChangeCategory} value={category} required>
                     <option selected="selected">Select</option>
                     <option value="Clothing">Clothing</option>
                     <option value="Electronics">Electronics</option>
@@ -70,15 +70,15 @@ class AddProduct extends Component{
                 </div>
                 <div className="inputContainer">
                     <label htmlFor="name" className="label">Name</label>
-                    <input type="text" id="name" className="input" onChange={this.onChangeName} value={name}/> 
+                    <input type="text" id="name" className="input" onChange={this.onChangeName} value={name} required/> 
                 </div>
                 <div className="inputContainer">
                     <label htmlFor='description' className="label">Description</label>
-                    <textarea rows="10" columns="30" id="description" className="input" onChange={this.onChangeDescription} value={description}/>
+                    <textarea rows="10" columns="30" id="description" className="input" onChange={this.onChangeDescription} value={description} required/>
                 </div>
                 <div className="inputContainer">
                     <label htmlFor="price" className="label">Price</label>
-                    <input type="text" id="price" className="input" onChange={this.onChangePrice} value={price}/> 
+                    <input type="text" id="price" className="input" onChange={this.onChangePrice} value={price} required/> 
                 </div>
                 <Link to="/" className="link">
             <button type="submit" className="addProductButton">Add Product</button>
