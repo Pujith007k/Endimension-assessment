@@ -1,0 +1,49 @@
+.addProductContainer{
+    height:500px;
+    width:500px;
+    border-radius:20px;
+    display:flex;
+    flex-direction :column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 237, 237);
+
+}
+.mainContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputContainer{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+.label{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+
+}
+.input{
+    height:40px;
+    width:400px;
+
+}
+.addProductButton{
+    height:40px;
+    width:170px;
+    background-color: rgb(238, 171, 70);
+    color:#ffffff;
+    border-radius:10px;
+    border-width:0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-right:10px;
+    
+}
+.link{
+    text-decoration: none;
+}
